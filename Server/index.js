@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 
 
-const app = express();
+const app = express(); 
 
 const MONGO_URI=process.env.MONGO_URI || 'mongodb+srv://shubhamkate962:Z6C3RKTu6es3NEyG@cygniidata.kyxrd.mongodb.net/CygniiDbCluster?retryWrites=true&w=majority'
 console.log(MONGO_URI);
