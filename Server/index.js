@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 
-// Initialize Express app
+
 const app = express();
 
 const MONGO_URI=process.env.MONGO_URI
