@@ -15,11 +15,11 @@ const Form = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async(e) => {
     e.preventDefault();
     console.log(colorData);
 
-    axios.post('https://cygnii.onrender.com',colorData).then((res)=>{
+    await axios.post('https://cygnii.onrender.com',colorData).then((res)=>{
         console.log("done");
         alert('Data sent successfully');
         
