@@ -42,7 +42,7 @@ const Form = () => {
             name="srNo"
             value={colorData.srNo}
             onChange={handleChange}
-            placeholder="Enter Serial Number"
+            placeholder="Enter Serial Number" 
           />
         </div>
         <div>
