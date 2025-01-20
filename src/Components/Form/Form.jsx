@@ -19,7 +19,7 @@ const Form = () => {
     e.preventDefault();
     console.log(colorData);
 
-    axios.post('http://localhost:5001/submit',colorData).then((res)=>{
+    axios.post('https://cygnii.onrender.com',colorData).then((res)=>{
         console.log("done");
         alert('Data sent successfully');
         
