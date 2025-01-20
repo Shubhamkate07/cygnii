@@ -6,12 +6,15 @@ const cors = require('cors');
 // Initialize Express app
 const app = express();
 
+const MONGO_URI=process.env.MONGO_URI
+console.log(MONGO_URI);
+
 // Middleware setup
 app.use(cors());
 app.use(bodyParser.json());
 
 // MongoDB connection
-mongoose.connect('mongodb://localhost:27017/colorData')
+mongoose.connect(MONGO_URI)
   .then(() => {
     console.log('MongoDB connected');
   })
